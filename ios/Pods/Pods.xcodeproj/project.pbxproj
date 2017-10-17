@@ -1,0 +1,1486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020999D1319E2EC8810328438C5F731E /* dumpfile.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA1BE61766B7DF062FD7C5FC74AA4A4A /* dumpfile.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		0AED6A8FBEF7F5C59C7082B8E7716BE2 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E98470F76E50FC859C4EC3BE33770E /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1204F3A8B2D551ED3872F54C7A77924D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		141DFB84B27362913B706C973CEA5640 /* Pods-Linkify-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A488C097D891317A48E44178E7ED22 /* Pods-Linkify-tvOSTests-dummy.m */; };
+		1483B1F340E63F40FD056C6BA4AEBEC0 /* block_builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = A7817AAD8D0134F592BF9B2E17CE7F33 /* block_builder.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		1B6053DB4F426B47C4A91E97990824D3 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4B7218913B5D8091119E7403B1988A /* GoogleToolboxForMac-dummy.m */; };
+		1DC99872CB4EC5FE2C558903B83CA2AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1E1E0E1B7C557429FC76AF964804A029 /* leveldb-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27390BA1DC0F14CC42FD3FA866F897A3 /* leveldb-library-dummy.m */; };
+		1E46EC8AB8830A23FAC91E8547748BF5 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE299A03BB26AE96379AD9C08C3A7A1 /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2058FA583DC0E4B05FDB8F8FF8F644AC /* status.cc in Sources */ = {isa = PBXBuildFile; fileRef = 37E18D3EA838688570887A98DFFE24DD /* status.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		213ED1CEC97875917254D1B068F6AB65 /* comparator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 83A88B0BF7D670E04966ECB8AB37ABA6 /* comparator.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		23C7621BD6142B7F6E7297E7CCA39E5B /* db_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 904C8D22F4FD38D70A581486B38B795F /* db_impl.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		28B7761E1D77D96D267539A7B67188EA /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A72F3DC2F2D5F2F52E439B887F9E32B /* nanopb-dummy.m */; };
+		2B8C1F7AD161C1AA1B804A03AE77733B /* testutil.cc in Sources */ = {isa = PBXBuildFile; fileRef = EFA2E2A5756DEE161D42EA9332EA339F /* testutil.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		2D4288601FD1E4B395B7A4C9F01BE82D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2DBC3819DECA22101E0C4316B4448E2E /* cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0DEAFAD1ABD7F62E140FF43637D8C7EA /* cache.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		31F5219287344FE7F350AF126F582AA6 /* builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9F772B9809F99C3A6D444C02595690CD /* builder.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		32BB3737EFF7EDD3E6074650D9DEF0BB /* write_batch.h in Headers */ = {isa = PBXBuildFile; fileRef = D92E8313619511E20DBF5A0A12174019 /* write_batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34FC158C8DE14FA3DB7181CD0DA2F80B /* Pods-Linkify-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4692492B6CCAF3E70C113F121962619 /* Pods-Linkify-tvOS-dummy.m */; };
+		39652004B7DB500709E6A235748CD7A2 /* env_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 02E6AB03CB3AF9F209B9BACE535F0E2F /* env_posix.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		3D5A8358B3CE03D143C39C4BF52B34D3 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF3E32EAF22F2BBC49C461BC320C8CC /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3E0B66B3000C26115B0C3195FF6216F5 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = A47C0B970C4FB223FD5A28E44FFD172A /* options.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43D1B4D7E7E0DE55DA7467ABF112E610 /* crc32c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 75E802D82CBD968BC901DAF45FD2D576 /* crc32c.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		4489472E144F93123A6FB17816A359C5 /* arena.cc in Sources */ = {isa = PBXBuildFile; fileRef = 709184F3C012966A5A2651EA7449422F /* arena.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		4873EF86B942AD9A49A4909BB1CB8BB7 /* db_iter.cc in Sources */ = {isa = PBXBuildFile; fileRef = AA8E681D2A2B3E84113B180CB82EEE63 /* db_iter.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		4D58987D591500A348C20EE95333AE3C /* block.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5185BBF2FC7CF93F68425848EEEAA343 /* block.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		51BF5177FF251E5409AACE582CAF6B4E /* table_builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 11B4B47FB5D6BF10F820B7FD698C9F52 /* table_builder.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		52C18066516C52F8858C0D7ADB7EE5B1 /* filter_block.cc in Sources */ = {isa = PBXBuildFile; fileRef = 139EF66FABEBD8A0A56618597F3A34DC /* filter_block.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		53187BB87938643897A652982B2FC3DE /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = C46A3FB4834A8BD0B56CEA8E12AF9627 /* iterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		580F960A15A2C736D0B6F5D7962D5C91 /* version_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5A911B4D883571C78E34085C2BD34135 /* version_set.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		597F898A5BF64EA156A6B63B0631D177 /* table_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3344C3FE25459460190C4D0622E8A9AE /* table_builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F9D97E90995FE5A0F0F9D973F751835 /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F63C0E65A61AA07055782F573ECB1C /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63DEDFBB1A0929C11142FF9A1A771726 /* table_cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = F7F651A32D542FFE19F299B33A73A83E /* table_cache.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		6403882C9F53A419228413C3F43F0201 /* two_level_iterator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F42BD90CB91451532E505A50639EDE4 /* two_level_iterator.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		643845AA48589C286026618D168D41FB /* iterator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99565248508D4F3D49321F63B36A0BC1 /* iterator.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		645A739B4879BF9BDD7E72F426B7F207 /* write_batch.cc in Sources */ = {isa = PBXBuildFile; fileRef = DE14191CC2081B67ACD71243C916A816 /* write_batch.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		66C8173FF5A09F6221992B693C02BA00 /* c.cc in Sources */ = {isa = PBXBuildFile; fileRef = DD40FA52D71A04BA1313843EC6594951 /* c.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		6B02824B166AF4649072CAB930283EEA /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0CE479AE9174657651C7F58CE7110C /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C2611B6644E07BFD1DB6986125963C6 /* slice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1277342FDF36CED96B64B7A9571E7A /* slice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CD7AF5E438E36BAE2413E1A88F51B55 /* Pods-LinkifyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7874858DE70E0049C3A55778CF224E60 /* Pods-LinkifyTests-dummy.m */; };
+		6E227069432130709196D33839ADCC09 /* leveldb_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 48E4513FED7D0FD733538DE8DB381371 /* leveldb_main.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		74238B26A58E28628E2CA20536F4C49B /* status.h in Headers */ = {isa = PBXBuildFile; fileRef = E34BEE35EA6F20E563624203EC83F579 /* status.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85C010782EC0F41064C7653948C14B44 /* filter_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F3B34132C71B5EDF9F7B2B63AAF307 /* filter_policy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85F200B3AAEF07BE8FB8BB9B71B467F4 /* dumpfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4667B19187743C08FDD1B800F925E317 /* dumpfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EF65A1B0B17F8E80543FCC58032B738 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		91C9C419C2E304B3A68293C22053034E /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = FF9799914C045B8B9FC0663D56237F16 /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		920847548D2E0FA50DE2DB403BE99BEC /* filename.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3853272B7942EB6F8E9F316336BE50FA /* filename.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		9C3487D6D4B5307CE29DF79808FC6E69 /* env.cc in Sources */ = {isa = PBXBuildFile; fileRef = 61C7D6F247E225C8B1F9ACD721E99BDF /* env.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		9CBD14C17446EC9384CFAADBADF12387 /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = D730F8EEE31507A0B5071B18616995A3 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
+		A0257C3136FE2F822DF9C9EEA1E20B01 /* memtable.cc in Sources */ = {isa = PBXBuildFile; fileRef = F39DA72A8A5B2F7A44E780372D7A7EC1 /* memtable.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		A32D052EEA2CE6224D15E71C8A9A4364 /* Pods-Linkify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE495B748D7715D14F0D9B7A46EB76F /* Pods-Linkify-dummy.m */; };
+		A39A7F90321353E49D6165BAD53505B2 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = E68327827F1DC4AB5E29CAD09D9B6557 /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6A81F8E2BA9623E26A16AE899A1D4C2 /* log_reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = 227A643945EF43DF7EC4A9B9791A3C29 /* log_reader.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		A9C663F709035E2795C137A55CC39D76 /* cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 185608DFB3605B46FBB08528D7B09F1C /* cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACB0444FD68A026F2713E025D9A69F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AE40968E45EB75088481466E4E7671A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AF59D4B7D5CF2D98C67FF065F89F617B /* coding.cc in Sources */ = {isa = PBXBuildFile; fileRef = 47B6D44C37C6D1F7630167602AC71D68 /* coding.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		AFCBC4825296D9A6DD77DF637683DF44 /* log_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = C58DC89DEE77E5675C4CCB92E9F35405 /* log_writer.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		B46DAD8B6396A7948C1E380FA2BB6BD1 /* db.h in Headers */ = {isa = PBXBuildFile; fileRef = E8655687E7F27A4A38A09D8C1237132A /* db.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B80FA922E31298FFB2CAB8CE8F1491D2 /* version_edit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 22420B0F02BB3414DF977133C3B62E7C /* version_edit.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		BEC28FA6A7A5B515095605EF96FB055E /* port_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 570D8A8FC74C893F73524F2624D37D54 /* port_posix.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		C1C3497DC875201843D1588AA4518A6E /* hash.cc in Sources */ = {isa = PBXBuildFile; fileRef = 764104C8370114C489ED76A637FD557B /* hash.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		C6F4AEC304B6FC97BB66E96E20E294AA /* comparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5336D14B94D9DC769C5D1DF24E24A4F4 /* comparator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C84DB09ACC5BF2E0CD205B5618AFAB19 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 83848FFCFE1F41F4876847C5CE7F13D6 /* table.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9C13E6B9DDD0907972675F81C76C9B0 /* repair.cc in Sources */ = {isa = PBXBuildFile; fileRef = B365A70C05968B610B77EBAF72A8E199 /* repair.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		CBC7548501161D689ACF033CA42AA1AB /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = EF9F7E36F4B836D666455D7985674B1E /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDBADC95E236D1D745B05896375CF4C9 /* testharness.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5334C0991C1FEC9783FAF679D0F210AB /* testharness.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		D02A9BE496DF996BBC92776E586BCAF8 /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D3F5CFC75742299883FEFB140E725F /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D66C50ECE454C513FA1D9403227AAAAD /* dbformat.cc in Sources */ = {isa = PBXBuildFile; fileRef = 54AED7A7638313867113F3B761405886 /* dbformat.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		D97084C5A340727E31467C5A78CD69EA /* bloom.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5D725BF5B009AA2124DA66CD6D101B94 /* bloom.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		DA7BE48428FCA3444D7B75C9851A6FCE /* histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = 82BFD04B3935D3EBC9A2EED5F20C37CA /* histogram.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		E102F486B5B7D0E08E6E0E3E69D89A63 /* filter_policy.cc in Sources */ = {isa = PBXBuildFile; fileRef = FFCC6310DA26BE9E24A93A09D5BB98F8 /* filter_policy.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		E39C8188D19FFE393BB30DC2418980EA /* env.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D5783E950BD940FB396A43473517EF /* env.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4B6A3F3F02F3A8631D214E1E2152CA0 /* options.cc in Sources */ = {isa = PBXBuildFile; fileRef = 09EDA94A433AA892B31269E923323FBF /* options.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		E9C183F49B80EC0771D52CAF2D09EE95 /* logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8B2A0A2C28D62F620700BA0164980D02 /* logging.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		EF37F72A295CC9FB4F2A1C33760939A0 /* table.cc in Sources */ = {isa = PBXBuildFile; fileRef = 383AC69CAB8C603974C32D3397AA7A91 /* table.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		F2A71EFF37214BF8F060F8710E7358A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F2A7C7D18755231B289C10D16DD6F730 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = CDEDB2FC5D6933741A3EFDD65F0CBA58 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		F2CE9146F7CB3D7451E69B979BF7A143 /* merger.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1476B0D6ED7AABFD3E519A49EA9453DC /* merger.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+		F6BDE8265AE900B3AA3E523BF7AA9859 /* format.cc in Sources */ = {isa = PBXBuildFile; fileRef = B8971A21D013B932C0DA5928D84C55F7 /* format.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28FB9047227E5D80CD1EA59CBA0375B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4B35B9FC819386EB09219BC91827D7;
+			remoteInfo = nanopb;
+		};
+		328430AD33CB22F28A6090962CB81DFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1BBB76ADBF2EF4EF2CE5DF6BBC77296;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		801FDB365E3B922102EB889220459836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6114F7C8E932C8FB4D8F8B320ABA8873;
+			remoteInfo = "leveldb-library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02E6AB03CB3AF9F209B9BACE535F0E2F /* env_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = env_posix.cc; path = util/env_posix.cc; sourceTree = "<group>"; };
+		08F3B34132C71B5EDF9F7B2B63AAF307 /* filter_policy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_policy.h; path = include/leveldb/filter_policy.h; sourceTree = "<group>"; };
+		095E4D9E09AFC14AF304AB6ED41EF033 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
+		09EDA94A433AA892B31269E923323FBF /* options.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = options.cc; path = util/options.cc; sourceTree = "<group>"; };
+		0D0A1D93AE8A0146DC957E3533035DA9 /* libPods-Linkify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Linkify.a"; path = "libPods-Linkify.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DEAFAD1ABD7F62E140FF43637D8C7EA /* cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = cache.cc; path = util/cache.cc; sourceTree = "<group>"; };
+		0EE299A03BB26AE96379AD9C08C3A7A1 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
+		11B4B47FB5D6BF10F820B7FD698C9F52 /* table_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table_builder.cc; path = table/table_builder.cc; sourceTree = "<group>"; };
+		139EF66FABEBD8A0A56618597F3A34DC /* filter_block.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filter_block.cc; path = table/filter_block.cc; sourceTree = "<group>"; };
+		1476B0D6ED7AABFD3E519A49EA9453DC /* merger.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = merger.cc; path = table/merger.cc; sourceTree = "<group>"; };
+		14AD3C5B618C38D5A1A73C85069157A3 /* Pods-LinkifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		185608DFB3605B46FBB08528D7B09F1C /* cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cache.h; path = include/leveldb/cache.h; sourceTree = "<group>"; };
+		18E98470F76E50FC859C4EC3BE33770E /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
+		1B0CE479AE9174657651C7F58CE7110C /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		1C1277342FDF36CED96B64B7A9571E7A /* slice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = slice.h; path = include/leveldb/slice.h; sourceTree = "<group>"; };
+		22420B0F02BB3414DF977133C3B62E7C /* version_edit.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = version_edit.cc; path = db/version_edit.cc; sourceTree = "<group>"; };
+		227A643945EF43DF7EC4A9B9791A3C29 /* log_reader.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = log_reader.cc; path = db/log_reader.cc; sourceTree = "<group>"; };
+		2449A1901452D65EBA822B87C7E3A22C /* Pods-Linkify-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Linkify-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		27390BA1DC0F14CC42FD3FA866F897A3 /* leveldb-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "leveldb-library-dummy.m"; sourceTree = "<group>"; };
+		27CE1E7E1782CA9A1CD72547EC445802 /* Pods-Linkify-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Linkify-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3344C3FE25459460190C4D0622E8A9AE /* table_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table_builder.h; path = include/leveldb/table_builder.h; sourceTree = "<group>"; };
+		37E18D3EA838688570887A98DFFE24DD /* status.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = status.cc; path = util/status.cc; sourceTree = "<group>"; };
+		383AC69CAB8C603974C32D3397AA7A91 /* table.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table.cc; path = table/table.cc; sourceTree = "<group>"; };
+		3853272B7942EB6F8E9F316336BE50FA /* filename.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filename.cc; path = db/filename.cc; sourceTree = "<group>"; };
+		39EDA999AE6E95BC47EDEC6E44D5FCDF /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		4663FC21FAA3EF11DF6C5A937A38F850 /* libPods-Linkify-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Linkify-tvOSTests.a"; path = "libPods-Linkify-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4667B19187743C08FDD1B800F925E317 /* dumpfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dumpfile.h; path = include/leveldb/dumpfile.h; sourceTree = "<group>"; };
+		47B6D44C37C6D1F7630167602AC71D68 /* coding.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = coding.cc; path = util/coding.cc; sourceTree = "<group>"; };
+		48E4513FED7D0FD733538DE8DB381371 /* leveldb_main.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = leveldb_main.cc; path = db/leveldb_main.cc; sourceTree = "<group>"; };
+		4EC2ADF867705BB1AD02DA90CF619D0F /* Pods-LinkifyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinkifyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50D5783E950BD940FB396A43473517EF /* env.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env.h; path = include/leveldb/env.h; sourceTree = "<group>"; };
+		5185BBF2FC7CF93F68425848EEEAA343 /* block.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = block.cc; path = table/block.cc; sourceTree = "<group>"; };
+		5334C0991C1FEC9783FAF679D0F210AB /* testharness.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = testharness.cc; path = util/testharness.cc; sourceTree = "<group>"; };
+		5336D14B94D9DC769C5D1DF24E24A4F4 /* comparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comparator.h; path = include/leveldb/comparator.h; sourceTree = "<group>"; };
+		534D9376455C5641E1CB726986AA8B9A /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		543D8DD0617BD95E16E2B05B7BC818DB /* Pods-Linkify-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Linkify-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		54AED7A7638313867113F3B761405886 /* dbformat.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dbformat.cc; path = db/dbformat.cc; sourceTree = "<group>"; };
+		570D8A8FC74C893F73524F2624D37D54 /* port_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = port_posix.cc; path = port/port_posix.cc; sourceTree = "<group>"; };
+		57503117C9D2A4CA74058B757831C408 /* Pods-Linkify-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Linkify-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A7E02583462411AC3DEB1F73480C00A /* Pods-LinkifyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinkifyTests-resources.sh"; sourceTree = "<group>"; };
+		5A911B4D883571C78E34085C2BD34135 /* version_set.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = version_set.cc; path = db/version_set.cc; sourceTree = "<group>"; };
+		5D725BF5B009AA2124DA66CD6D101B94 /* bloom.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = bloom.cc; path = util/bloom.cc; sourceTree = "<group>"; };
+		60E56F3A40CB146839AB61F65A2CC53E /* Pods-LinkifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61C7D6F247E225C8B1F9ACD721E99BDF /* env.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = env.cc; path = util/env.cc; sourceTree = "<group>"; };
+		63DEC0B9997A1830D7C0CA3F90B9D7E7 /* Pods-Linkify-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Linkify-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A8E2630777F61F7A9DF7F5120C64FE2 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		6F72E5EFE4A85ABF20991AB92D1DE120 /* Pods-Linkify-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Linkify-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		709184F3C012966A5A2651EA7449422F /* arena.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = arena.cc; path = util/arena.cc; sourceTree = "<group>"; };
+		7230163DD5DA521682F4EC22B1C61DB1 /* Pods-Linkify-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Linkify-acknowledgements.markdown"; sourceTree = "<group>"; };
+		75E802D82CBD968BC901DAF45FD2D576 /* crc32c.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = crc32c.cc; path = util/crc32c.cc; sourceTree = "<group>"; };
+		764104C8370114C489ED76A637FD557B /* hash.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = hash.cc; path = util/hash.cc; sourceTree = "<group>"; };
+		76C0533C2C48CCCABB08204971769236 /* leveldb-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-prefix.pch"; sourceTree = "<group>"; };
+		7874858DE70E0049C3A55778CF224E60 /* Pods-LinkifyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinkifyTests-dummy.m"; sourceTree = "<group>"; };
+		7C80D513327162F66D6B7777354EB2A8 /* libPods-Linkify-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Linkify-tvOS.a"; path = "libPods-Linkify-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E32B84F2587D098165A2A57A7CA4873 /* leveldb-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "leveldb-library.xcconfig"; sourceTree = "<group>"; };
+		82BFD04B3935D3EBC9A2EED5F20C37CA /* histogram.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = histogram.cc; path = util/histogram.cc; sourceTree = "<group>"; };
+		83848FFCFE1F41F4876847C5CE7F13D6 /* table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table.h; path = include/leveldb/table.h; sourceTree = "<group>"; };
+		83A488C097D891317A48E44178E7ED22 /* Pods-Linkify-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Linkify-tvOSTests-dummy.m"; sourceTree = "<group>"; };
+		83A88B0BF7D670E04966ECB8AB37ABA6 /* comparator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = comparator.cc; path = util/comparator.cc; sourceTree = "<group>"; };
+		88D3F5CFC75742299883FEFB140E725F /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
+		8ABA185AA39C98CE7DA9609BC566F45E /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		8B2A0A2C28D62F620700BA0164980D02 /* logging.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = logging.cc; path = util/logging.cc; sourceTree = "<group>"; };
+		8F42BD90CB91451532E505A50639EDE4 /* two_level_iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = two_level_iterator.cc; path = table/two_level_iterator.cc; sourceTree = "<group>"; };
+		904C8D22F4FD38D70A581486B38B795F /* db_impl.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_impl.cc; path = db/db_impl.cc; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94E1799D297260908D53F25FD894FB44 /* Pods-Linkify-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Linkify-frameworks.sh"; sourceTree = "<group>"; };
+		99565248508D4F3D49321F63B36A0BC1 /* iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = iterator.cc; path = table/iterator.cc; sourceTree = "<group>"; };
+		9A72F3DC2F2D5F2F52E439B887F9E32B /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
+		9C90131FB40867017ECF8CBE3968D43C /* Pods-Linkify-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Linkify-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9F772B9809F99C3A6D444C02595690CD /* builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = builder.cc; path = db/builder.cc; sourceTree = "<group>"; };
+		A24B39900B87D6F77170D8D4D51FD620 /* Pods-Linkify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Linkify.debug.xcconfig"; sourceTree = "<group>"; };
+		A3BA93408F919E4C0E7FB1B4DB0F4B9A /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		A47C0B970C4FB223FD5A28E44FFD172A /* options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = options.h; path = include/leveldb/options.h; sourceTree = "<group>"; };
+		A4F66725BB6CA097DE97CF3F8A24E3E7 /* Pods-Linkify-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Linkify-tvOS-frameworks.sh"; sourceTree = "<group>"; };
+		A7817AAD8D0134F592BF9B2E17CE7F33 /* block_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = block_builder.cc; path = table/block_builder.cc; sourceTree = "<group>"; };
+		AA8E681D2A2B3E84113B180CB82EEE63 /* db_iter.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_iter.cc; path = db/db_iter.cc; sourceTree = "<group>"; };
+		AC68760ACF1E86B32671D33D36BCE99A /* libleveldb-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libleveldb-library.a"; path = "libleveldb-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE88A4C4BBAAB7EF509C826F001D7C0A /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
+		B3115BBFE8FB426A007ECCBB05EA2018 /* libnanopb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libnanopb.a; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B365A70C05968B610B77EBAF72A8E199 /* repair.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = repair.cc; path = db/repair.cc; sourceTree = "<group>"; };
+		B8971A21D013B932C0DA5928D84C55F7 /* format.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = format.cc; path = table/format.cc; sourceTree = "<group>"; };
+		BA1BE61766B7DF062FD7C5FC74AA4A4A /* dumpfile.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dumpfile.cc; path = db/dumpfile.cc; sourceTree = "<group>"; };
+		BBD9641746E32C21FB51E620D68F124E /* Pods-Linkify-tvOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Linkify-tvOSTests-resources.sh"; sourceTree = "<group>"; };
+		BCB318E2BDDE1FF5CB85449AEA3E8601 /* Pods-Linkify-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Linkify-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCF3E32EAF22F2BBC49C461BC320C8CC /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		BF07C0958BFC2CB7F77E2DA874BB3D45 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		BFE495B748D7715D14F0D9B7A46EB76F /* Pods-Linkify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Linkify-dummy.m"; sourceTree = "<group>"; };
+		C397C9B04D95A6C6D596B31856D21AD2 /* Pods-Linkify-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Linkify-tvOS-resources.sh"; sourceTree = "<group>"; };
+		C46A3FB4834A8BD0B56CEA8E12AF9627 /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = include/leveldb/iterator.h; sourceTree = "<group>"; };
+		C4EDFBBD563D20F1DF1F5B12B0F05E28 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		C58DC89DEE77E5675C4CCB92E9F35405 /* log_writer.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = log_writer.cc; path = db/log_writer.cc; sourceTree = "<group>"; };
+		CA0E5FA6FF33FF449D6B8E36A0D7B25B /* Pods-Linkify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Linkify.release.xcconfig"; sourceTree = "<group>"; };
+		CDEDB2FC5D6933741A3EFDD65F0CBA58 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		CF40F61B6BF1C90AB97ABC747A327878 /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGoogleToolboxForMac.a; path = libGoogleToolboxForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F63C0E65A61AA07055782F573ECB1C /* c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = c.h; path = include/leveldb/c.h; sourceTree = "<group>"; };
+		D4692492B6CCAF3E70C113F121962619 /* Pods-Linkify-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Linkify-tvOS-dummy.m"; sourceTree = "<group>"; };
+		D730F8EEE31507A0B5071B18616995A3 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		D828D440562270E5D03B96A49A56DE46 /* Pods-Linkify-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Linkify-resources.sh"; sourceTree = "<group>"; };
+		D92E8313619511E20DBF5A0A12174019 /* write_batch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = write_batch.h; path = include/leveldb/write_batch.h; sourceTree = "<group>"; };
+		D9371AACDE6F529B7DC964E460D312A2 /* Pods-Linkify-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Linkify-acknowledgements.plist"; sourceTree = "<group>"; };
+		DAA72277B49819EA3A6EC56EBB5AC9EA /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		DD40FA52D71A04BA1313843EC6594951 /* c.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = c.cc; path = db/c.cc; sourceTree = "<group>"; };
+		DE14191CC2081B67ACD71243C916A816 /* write_batch.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = write_batch.cc; path = db/write_batch.cc; sourceTree = "<group>"; };
+		E34BEE35EA6F20E563624203EC83F579 /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = include/leveldb/status.h; sourceTree = "<group>"; };
+		E3DFCF3517F8E93FCA27886014A12F53 /* Pods-LinkifyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkifyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E513FE207E724F88F407D130B25E0AC3 /* Pods-LinkifyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinkifyTests-frameworks.sh"; sourceTree = "<group>"; };
+		E68327827F1DC4AB5E29CAD09D9B6557 /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
+		E8655687E7F27A4A38A09D8C1237132A /* db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db.h; path = include/leveldb/db.h; sourceTree = "<group>"; };
+		E98BD57DB5DF60ECEA74372814AC9A18 /* libPods-LinkifyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LinkifyTests.a"; path = "libPods-LinkifyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF91773C8BD23F60FD94E54EC9945468 /* Pods-Linkify-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Linkify-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF9F7E36F4B836D666455D7985674B1E /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		EFA2E2A5756DEE161D42EA9332EA339F /* testutil.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = testutil.cc; path = util/testutil.cc; sourceTree = "<group>"; };
+		F39DA72A8A5B2F7A44E780372D7A7EC1 /* memtable.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = memtable.cc; path = db/memtable.cc; sourceTree = "<group>"; };
+		F7F651A32D542FFE19F299B33A73A83E /* table_cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table_cache.cc; path = db/table_cache.cc; sourceTree = "<group>"; };
+		F9802E6B737F7DE5B49BE942EF237ED7 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		FD4B7218913B5D8091119E7403B1988A /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		FF9799914C045B8B9FC0663D56237F16 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		FFCC6310DA26BE9E24A93A09D5BB98F8 /* filter_policy.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filter_policy.cc; path = util/filter_policy.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EF63B6B74C314E372F4D762FDCAE9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1204F3A8B2D551ED3872F54C7A77924D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736872D0F6BFBDB3F36ED73405DE4E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE40968E45EB75088481466E4E7671A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		861E2CCB6C9C988E2C3E6C63893EABE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC99872CB4EC5FE2C558903B83CA2AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDC93E974DADA224098EDF2483DCDF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACB0444FD68A026F2713E025D9A69F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EB8A8937D61E8CED1F3C819230AE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A71EFF37214BF8F060F8710E7358A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE38D6D1064F1862CEE9BC49CD6065C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D4288601FD1E4B395B7A4C9F01BE82D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6B44BA2608F464BC0DA16D3C84E469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF65A1B0B17F8E80543FCC58032B738 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB9A76D8FA3CC327B56DE89E459DA3C /* Pods-LinkifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2ADF867705BB1AD02DA90CF619D0F /* Pods-LinkifyTests-acknowledgements.markdown */,
+				E3DFCF3517F8E93FCA27886014A12F53 /* Pods-LinkifyTests-acknowledgements.plist */,
+				7874858DE70E0049C3A55778CF224E60 /* Pods-LinkifyTests-dummy.m */,
+				E513FE207E724F88F407D130B25E0AC3 /* Pods-LinkifyTests-frameworks.sh */,
+				5A7E02583462411AC3DEB1F73480C00A /* Pods-LinkifyTests-resources.sh */,
+				60E56F3A40CB146839AB61F65A2CC53E /* Pods-LinkifyTests.debug.xcconfig */,
+				14AD3C5B618C38D5A1A73C85069157A3 /* Pods-LinkifyTests.release.xcconfig */,
+			);
+			name = "Pods-LinkifyTests";
+			path = "Target Support Files/Pods-LinkifyTests";
+			sourceTree = "<group>";
+		};
+		2696D4FE1AE0790B601E62CF80EB011C /* encode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = encode;
+			sourceTree = "<group>";
+		};
+		2915E15F97A6660AD8F93B8455AE8849 /* Pods-Linkify-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				27CE1E7E1782CA9A1CD72547EC445802 /* Pods-Linkify-tvOS-acknowledgements.markdown */,
+				63DEC0B9997A1830D7C0CA3F90B9D7E7 /* Pods-Linkify-tvOS-acknowledgements.plist */,
+				D4692492B6CCAF3E70C113F121962619 /* Pods-Linkify-tvOS-dummy.m */,
+				A4F66725BB6CA097DE97CF3F8A24E3E7 /* Pods-Linkify-tvOS-frameworks.sh */,
+				C397C9B04D95A6C6D596B31856D21AD2 /* Pods-Linkify-tvOS-resources.sh */,
+				2449A1901452D65EBA822B87C7E3A22C /* Pods-Linkify-tvOS.debug.xcconfig */,
+				543D8DD0617BD95E16E2B05B7BC818DB /* Pods-Linkify-tvOS.release.xcconfig */,
+			);
+			name = "Pods-Linkify-tvOS";
+			path = "Target Support Files/Pods-Linkify-tvOS";
+			sourceTree = "<group>";
+		};
+		397D80183F9742B24EE44EF927D0C56C /* decode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = decode;
+			sourceTree = "<group>";
+		};
+		45E9A4EEFD40F73789BE21B8A5E4F193 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				BA93D4FEE68F33F4835EBA10737834A9 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		4894A299EECAF6F96C69F5B99DF14ABE /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				684B6204341E0397E1EA8297192AB9DA /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		49A059CB05A812D93ADB1FD40361B034 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				BB7C868718738D1EBC33695938EAE3FE /* Defines */,
+				FB1E9C00D978F3809EE0ED7476716319 /* NSData+zlib */,
+				D97FAC00C3974CCACE9D729B3E6FEEE5 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		52B1482CA87827250D419B0846105472 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89C31E542E30E04E3B50A7B978486E7B /* Pods-Linkify */,
+				2915E15F97A6660AD8F93B8455AE8849 /* Pods-Linkify-tvOS */,
+				D65416971D69E5D799E9BA954E8FB229 /* Pods-Linkify-tvOSTests */,
+				0EB9A76D8FA3CC327B56DE89E459DA3C /* Pods-LinkifyTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5E75284404618B6B86515AA3C50B848F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4EDFBBD563D20F1DF1F5B12B0F05E28 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		684B6204341E0397E1EA8297192AB9DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9802E6B737F7DE5B49BE942EF237ED7 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69427D90F07E10AEDE9B216F9E434EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ABA185AA39C98CE7DA9609BC566F45E /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BB3C102FA326B337AA36D4032F6761E /* leveldb-library */ = {
+			isa = PBXGroup;
+			children = (
+				709184F3C012966A5A2651EA7449422F /* arena.cc */,
+				5185BBF2FC7CF93F68425848EEEAA343 /* block.cc */,
+				A7817AAD8D0134F592BF9B2E17CE7F33 /* block_builder.cc */,
+				5D725BF5B009AA2124DA66CD6D101B94 /* bloom.cc */,
+				9F772B9809F99C3A6D444C02595690CD /* builder.cc */,
+				DD40FA52D71A04BA1313843EC6594951 /* c.cc */,
+				D2F63C0E65A61AA07055782F573ECB1C /* c.h */,
+				0DEAFAD1ABD7F62E140FF43637D8C7EA /* cache.cc */,
+				185608DFB3605B46FBB08528D7B09F1C /* cache.h */,
+				47B6D44C37C6D1F7630167602AC71D68 /* coding.cc */,
+				83A88B0BF7D670E04966ECB8AB37ABA6 /* comparator.cc */,
+				5336D14B94D9DC769C5D1DF24E24A4F4 /* comparator.h */,
+				75E802D82CBD968BC901DAF45FD2D576 /* crc32c.cc */,
+				E8655687E7F27A4A38A09D8C1237132A /* db.h */,
+				904C8D22F4FD38D70A581486B38B795F /* db_impl.cc */,
+				AA8E681D2A2B3E84113B180CB82EEE63 /* db_iter.cc */,
+				54AED7A7638313867113F3B761405886 /* dbformat.cc */,
+				BA1BE61766B7DF062FD7C5FC74AA4A4A /* dumpfile.cc */,
+				4667B19187743C08FDD1B800F925E317 /* dumpfile.h */,
+				61C7D6F247E225C8B1F9ACD721E99BDF /* env.cc */,
+				50D5783E950BD940FB396A43473517EF /* env.h */,
+				02E6AB03CB3AF9F209B9BACE535F0E2F /* env_posix.cc */,
+				3853272B7942EB6F8E9F316336BE50FA /* filename.cc */,
+				139EF66FABEBD8A0A56618597F3A34DC /* filter_block.cc */,
+				FFCC6310DA26BE9E24A93A09D5BB98F8 /* filter_policy.cc */,
+				08F3B34132C71B5EDF9F7B2B63AAF307 /* filter_policy.h */,
+				B8971A21D013B932C0DA5928D84C55F7 /* format.cc */,
+				764104C8370114C489ED76A637FD557B /* hash.cc */,
+				82BFD04B3935D3EBC9A2EED5F20C37CA /* histogram.cc */,
+				99565248508D4F3D49321F63B36A0BC1 /* iterator.cc */,
+				C46A3FB4834A8BD0B56CEA8E12AF9627 /* iterator.h */,
+				48E4513FED7D0FD733538DE8DB381371 /* leveldb_main.cc */,
+				227A643945EF43DF7EC4A9B9791A3C29 /* log_reader.cc */,
+				C58DC89DEE77E5675C4CCB92E9F35405 /* log_writer.cc */,
+				8B2A0A2C28D62F620700BA0164980D02 /* logging.cc */,
+				F39DA72A8A5B2F7A44E780372D7A7EC1 /* memtable.cc */,
+				1476B0D6ED7AABFD3E519A49EA9453DC /* merger.cc */,
+				09EDA94A433AA892B31269E923323FBF /* options.cc */,
+				A47C0B970C4FB223FD5A28E44FFD172A /* options.h */,
+				570D8A8FC74C893F73524F2624D37D54 /* port_posix.cc */,
+				B365A70C05968B610B77EBAF72A8E199 /* repair.cc */,
+				1C1277342FDF36CED96B64B7A9571E7A /* slice.h */,
+				37E18D3EA838688570887A98DFFE24DD /* status.cc */,
+				E34BEE35EA6F20E563624203EC83F579 /* status.h */,
+				383AC69CAB8C603974C32D3397AA7A91 /* table.cc */,
+				83848FFCFE1F41F4876847C5CE7F13D6 /* table.h */,
+				11B4B47FB5D6BF10F820B7FD698C9F52 /* table_builder.cc */,
+				3344C3FE25459460190C4D0622E8A9AE /* table_builder.h */,
+				F7F651A32D542FFE19F299B33A73A83E /* table_cache.cc */,
+				5334C0991C1FEC9783FAF679D0F210AB /* testharness.cc */,
+				EFA2E2A5756DEE161D42EA9332EA339F /* testutil.cc */,
+				8F42BD90CB91451532E505A50639EDE4 /* two_level_iterator.cc */,
+				22420B0F02BB3414DF977133C3B62E7C /* version_edit.cc */,
+				5A911B4D883571C78E34085C2BD34135 /* version_set.cc */,
+				DE14191CC2081B67ACD71243C916A816 /* write_batch.cc */,
+				D92E8313619511E20DBF5A0A12174019 /* write_batch.h */,
+				8D90449E9B5C5D83F5931F4AB9FDB205 /* Support Files */,
+			);
+			name = "leveldb-library";
+			path = "leveldb-library";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				88A9DF5F593C561367195147B0D14A46 /* Pods */,
+				B47B1AA7B99D9B9E608A52FC35B542C2 /* Products */,
+				52B1482CA87827250D419B0846105472 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		88A9DF5F593C561367195147B0D14A46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA9AFB7292EB111F67E75621501BEBCE /* Firebase */,
+				4894A299EECAF6F96C69F5B99DF14ABE /* FirebaseAnalytics */,
+				45E9A4EEFD40F73789BE21B8A5E4F193 /* FirebaseCore */,
+				FA274DD55FD73FCDDBAC4DDCB21CE319 /* FirebaseDatabase */,
+				F6371EE094DDB0CBDB92909ACF778ADC /* FirebaseInstanceID */,
+				49A059CB05A812D93ADB1FD40361B034 /* GoogleToolboxForMac */,
+				7BB3C102FA326B337AA36D4032F6761E /* leveldb-library */,
+				92DE139AF759279A31202E4C623C809A /* nanopb */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89C31E542E30E04E3B50A7B978486E7B /* Pods-Linkify */ = {
+			isa = PBXGroup;
+			children = (
+				7230163DD5DA521682F4EC22B1C61DB1 /* Pods-Linkify-acknowledgements.markdown */,
+				D9371AACDE6F529B7DC964E460D312A2 /* Pods-Linkify-acknowledgements.plist */,
+				BFE495B748D7715D14F0D9B7A46EB76F /* Pods-Linkify-dummy.m */,
+				94E1799D297260908D53F25FD894FB44 /* Pods-Linkify-frameworks.sh */,
+				D828D440562270E5D03B96A49A56DE46 /* Pods-Linkify-resources.sh */,
+				A24B39900B87D6F77170D8D4D51FD620 /* Pods-Linkify.debug.xcconfig */,
+				CA0E5FA6FF33FF449D6B8E36A0D7B25B /* Pods-Linkify.release.xcconfig */,
+			);
+			name = "Pods-Linkify";
+			path = "Target Support Files/Pods-Linkify";
+			sourceTree = "<group>";
+		};
+		8D90449E9B5C5D83F5931F4AB9FDB205 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E32B84F2587D098165A2A57A7CA4873 /* leveldb-library.xcconfig */,
+				27390BA1DC0F14CC42FD3FA866F897A3 /* leveldb-library-dummy.m */,
+				76C0533C2C48CCCABB08204971769236 /* leveldb-library-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/leveldb-library";
+			sourceTree = "<group>";
+		};
+		92DE139AF759279A31202E4C623C809A /* nanopb */ = {
+			isa = PBXGroup;
+			children = (
+				E68327827F1DC4AB5E29CAD09D9B6557 /* pb.h */,
+				D730F8EEE31507A0B5071B18616995A3 /* pb_common.c */,
+				0EE299A03BB26AE96379AD9C08C3A7A1 /* pb_common.h */,
+				CDEDB2FC5D6933741A3EFDD65F0CBA58 /* pb_decode.c */,
+				18E98470F76E50FC859C4EC3BE33770E /* pb_decode.h */,
+				FF9799914C045B8B9FC0663D56237F16 /* pb_encode.c */,
+				88D3F5CFC75742299883FEFB140E725F /* pb_encode.h */,
+				397D80183F9742B24EE44EF927D0C56C /* decode */,
+				2696D4FE1AE0790B601E62CF80EB011C /* encode */,
+				B0E1E2CBD1A88E45D75A7FF5A60993CD /* Support Files */,
+			);
+			name = nanopb;
+			path = nanopb;
+			sourceTree = "<group>";
+		};
+		B0E1E2CBD1A88E45D75A7FF5A60993CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				095E4D9E09AFC14AF304AB6ED41EF033 /* nanopb.xcconfig */,
+				9A72F3DC2F2D5F2F52E439B887F9E32B /* nanopb-dummy.m */,
+				AE88A4C4BBAAB7EF509C826F001D7C0A /* nanopb-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/nanopb";
+			sourceTree = "<group>";
+		};
+		B47B1AA7B99D9B9E608A52FC35B542C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF40F61B6BF1C90AB97ABC747A327878 /* libGoogleToolboxForMac.a */,
+				AC68760ACF1E86B32671D33D36BCE99A /* libleveldb-library.a */,
+				B3115BBFE8FB426A007ECCBB05EA2018 /* libnanopb.a */,
+				0D0A1D93AE8A0146DC957E3533035DA9 /* libPods-Linkify.a */,
+				7C80D513327162F66D6B7777354EB2A8 /* libPods-Linkify-tvOS.a */,
+				4663FC21FAA3EF11DF6C5A937A38F850 /* libPods-Linkify-tvOSTests.a */,
+				E98BD57DB5DF60ECEA74372814AC9A18 /* libPods-LinkifyTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA93D4FEE68F33F4835EBA10737834A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E2630777F61F7A9DF7F5120C64FE2 /* FirebaseCore.framework */,
+				BF07C0958BFC2CB7F77E2DA874BB3D45 /* FirebaseCoreDiagnostics.framework */,
+				DAA72277B49819EA3A6EC56EBB5AC9EA /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA9AFB7292EB111F67E75621501BEBCE /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D8375C3BED3AA19DC4071922847D1A26 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		BB7C868718738D1EBC33695938EAE3FE /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				1B0CE479AE9174657651C7F58CE7110C /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D65416971D69E5D799E9BA954E8FB229 /* Pods-Linkify-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C90131FB40867017ECF8CBE3968D43C /* Pods-Linkify-tvOSTests-acknowledgements.markdown */,
+				57503117C9D2A4CA74058B757831C408 /* Pods-Linkify-tvOSTests-acknowledgements.plist */,
+				83A488C097D891317A48E44178E7ED22 /* Pods-Linkify-tvOSTests-dummy.m */,
+				6F72E5EFE4A85ABF20991AB92D1DE120 /* Pods-Linkify-tvOSTests-frameworks.sh */,
+				BBD9641746E32C21FB51E620D68F124E /* Pods-Linkify-tvOSTests-resources.sh */,
+				EF91773C8BD23F60FD94E54EC9945468 /* Pods-Linkify-tvOSTests.debug.xcconfig */,
+				BCB318E2BDDE1FF5CB85449AEA3E8601 /* Pods-Linkify-tvOSTests.release.xcconfig */,
+			);
+			name = "Pods-Linkify-tvOSTests";
+			path = "Target Support Files/Pods-Linkify-tvOSTests";
+			sourceTree = "<group>";
+		};
+		D8375C3BED3AA19DC4071922847D1A26 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				39EDA999AE6E95BC47EDEC6E44D5FCDF /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D97FAC00C3974CCACE9D729B3E6FEEE5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3BA93408F919E4C0E7FB1B4DB0F4B9A /* GoogleToolboxForMac.xcconfig */,
+				FD4B7218913B5D8091119E7403B1988A /* GoogleToolboxForMac-dummy.m */,
+				534D9376455C5641E1CB726986AA8B9A /* GoogleToolboxForMac-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		F6371EE094DDB0CBDB92909ACF778ADC /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				5E75284404618B6B86515AA3C50B848F /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		FA274DD55FD73FCDDBAC4DDCB21CE319 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				69427D90F07E10AEDE9B216F9E434EED /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		FB1E9C00D978F3809EE0ED7476716319 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				EF9F7E36F4B836D666455D7985674B1E /* GTMNSData+zlib.h */,
+				BCF3E32EAF22F2BBC49C461BC320C8CC /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2846A8031C11507DDB5714C29767C365 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9D97E90995FE5A0F0F9D973F751835 /* c.h in Headers */,
+				A9C663F709035E2795C137A55CC39D76 /* cache.h in Headers */,
+				C6F4AEC304B6FC97BB66E96E20E294AA /* comparator.h in Headers */,
+				B46DAD8B6396A7948C1E380FA2BB6BD1 /* db.h in Headers */,
+				85F200B3AAEF07BE8FB8BB9B71B467F4 /* dumpfile.h in Headers */,
+				E39C8188D19FFE393BB30DC2418980EA /* env.h in Headers */,
+				85C010782EC0F41064C7653948C14B44 /* filter_policy.h in Headers */,
+				53187BB87938643897A652982B2FC3DE /* iterator.h in Headers */,
+				3E0B66B3000C26115B0C3195FF6216F5 /* options.h in Headers */,
+				6C2611B6644E07BFD1DB6986125963C6 /* slice.h in Headers */,
+				74238B26A58E28628E2CA20536F4C49B /* status.h in Headers */,
+				C84DB09ACC5BF2E0CD205B5618AFAB19 /* table.h in Headers */,
+				597F898A5BF64EA156A6B63B0631D177 /* table_builder.h in Headers */,
+				32BB3737EFF7EDD3E6074650D9DEF0BB /* write_batch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34476B01833D8F46D0CEB0D1A2BDEECD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B02824B166AF4649072CAB930283EEA /* GTMDefines.h in Headers */,
+				CBC7548501161D689ACF033CA42AA1AB /* GTMNSData+zlib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49EE04F5125849E644783C89F23AA9F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39A7F90321353E49D6165BAD53505B2 /* pb.h in Headers */,
+				1E46EC8AB8830A23FAC91E8547748BF5 /* pb_common.h in Headers */,
+				0AED6A8FBEF7F5C59C7082B8E7716BE2 /* pb_decode.h in Headers */,
+				D02A9BE496DF996BBC92776E586BCAF8 /* pb_encode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22742B3E1DCE3BA98A77A4BB0293673F /* Pods-Linkify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD4770408DDF3F927C12E71B427E97C0 /* Build configuration list for PBXNativeTarget "Pods-Linkify" */;
+			buildPhases = (
+				4D202C3F0AE87413CC2A43D854C9E6DB /* Sources */,
+				4EF63B6B74C314E372F4D762FDCAE9F2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0CD2863222B29366C9344126CD2AB6E /* PBXTargetDependency */,
+				A75DE1EFE7DC236BDD4C19D44CD35794 /* PBXTargetDependency */,
+				371616B2C3E5F5C1CFECBD929985C294 /* PBXTargetDependency */,
+			);
+			name = "Pods-Linkify";
+			productName = "Pods-Linkify";
+			productReference = 0D0A1D93AE8A0146DC957E3533035DA9 /* libPods-Linkify.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		47310EB5293B0B5948D1345379728221 /* Pods-Linkify-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48C06454FD3A4CDCC13862D970599B38 /* Build configuration list for PBXNativeTarget "Pods-Linkify-tvOS" */;
+			buildPhases = (
+				9D951FC245F633C6235B3EEAD044B76E /* Sources */,
+				8BDC93E974DADA224098EDF2483DCDF1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Linkify-tvOS";
+			productName = "Pods-Linkify-tvOS";
+			productReference = 7C80D513327162F66D6B7777354EB2A8 /* libPods-Linkify-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6114F7C8E932C8FB4D8F8B320ABA8873 /* leveldb-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B988007291601B7D5FFBB51279788A07 /* Build configuration list for PBXNativeTarget "leveldb-library" */;
+			buildPhases = (
+				D9E76F299E97E84B2181102E238B3BCC /* Sources */,
+				ABE38D6D1064F1862CEE9BC49CD6065C /* Frameworks */,
+				2846A8031C11507DDB5714C29767C365 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "leveldb-library";
+			productName = "leveldb-library";
+			productReference = AC68760ACF1E86B32671D33D36BCE99A /* libleveldb-library.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8107D30C26B4AEB1E92E1C2D81BB667F /* Pods-LinkifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80DAC301748286D2FC032B7399C96352 /* Build configuration list for PBXNativeTarget "Pods-LinkifyTests" */;
+			buildPhases = (
+				CD8984D9F1C0B72327BE351D37B0FC6E /* Sources */,
+				CD6B44BA2608F464BC0DA16D3C84E469 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LinkifyTests";
+			productName = "Pods-LinkifyTests";
+			productReference = E98BD57DB5DF60ECEA74372814AC9A18 /* libPods-LinkifyTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF4B35B9FC819386EB09219BC91827D7 /* nanopb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8307E997A097EB50C00A8C7967B858A /* Build configuration list for PBXNativeTarget "nanopb" */;
+			buildPhases = (
+				5303D5F0966B6798D7AAA88A9ACCB670 /* Sources */,
+				94EB8A8937D61E8CED1F3C819230AE4D /* Frameworks */,
+				49EE04F5125849E644783C89F23AA9F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nanopb;
+			productName = nanopb;
+			productReference = B3115BBFE8FB426A007ECCBB05EA2018 /* libnanopb.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E1BBB76ADBF2EF4EF2CE5DF6BBC77296 /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E910B89548204C9E82F8F7CCB1460E /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				E039C8832DF36C6AA9B398412DBAA4B5 /* Sources */,
+				736872D0F6BFBDB3F36ED73405DE4E29 /* Frameworks */,
+				34476B01833D8F46D0CEB0D1A2BDEECD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = CF40F61B6BF1C90AB97ABC747A327878 /* libGoogleToolboxForMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EB77C0EDE1CEFF672CAE95267A9D3FFD /* Pods-Linkify-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A129CC1C2CC63A3D82E969455A7D58D0 /* Build configuration list for PBXNativeTarget "Pods-Linkify-tvOSTests" */;
+			buildPhases = (
+				973BE7011C9572990360A5A78EADE523 /* Sources */,
+				861E2CCB6C9C988E2C3E6C63893EABE0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Linkify-tvOSTests";
+			productName = "Pods-Linkify-tvOSTests";
+			productReference = 4663FC21FAA3EF11DF6C5A937A38F850 /* libPods-Linkify-tvOSTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B47B1AA7B99D9B9E608A52FC35B542C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1BBB76ADBF2EF4EF2CE5DF6BBC77296 /* GoogleToolboxForMac */,
+				6114F7C8E932C8FB4D8F8B320ABA8873 /* leveldb-library */,
+				CF4B35B9FC819386EB09219BC91827D7 /* nanopb */,
+				22742B3E1DCE3BA98A77A4BB0293673F /* Pods-Linkify */,
+				47310EB5293B0B5948D1345379728221 /* Pods-Linkify-tvOS */,
+				EB77C0EDE1CEFF672CAE95267A9D3FFD /* Pods-Linkify-tvOSTests */,
+				8107D30C26B4AEB1E92E1C2D81BB667F /* Pods-LinkifyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D202C3F0AE87413CC2A43D854C9E6DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32D052EEA2CE6224D15E71C8A9A4364 /* Pods-Linkify-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5303D5F0966B6798D7AAA88A9ACCB670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B7761E1D77D96D267539A7B67188EA /* nanopb-dummy.m in Sources */,
+				9CBD14C17446EC9384CFAADBADF12387 /* pb_common.c in Sources */,
+				F2A7C7D18755231B289C10D16DD6F730 /* pb_decode.c in Sources */,
+				91C9C419C2E304B3A68293C22053034E /* pb_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973BE7011C9572990360A5A78EADE523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141DFB84B27362913B706C973CEA5640 /* Pods-Linkify-tvOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D951FC245F633C6235B3EEAD044B76E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FC158C8DE14FA3DB7181CD0DA2F80B /* Pods-Linkify-tvOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8984D9F1C0B72327BE351D37B0FC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD7AF5E438E36BAE2413E1A88F51B55 /* Pods-LinkifyTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E76F299E97E84B2181102E238B3BCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4489472E144F93123A6FB17816A359C5 /* arena.cc in Sources */,
+				4D58987D591500A348C20EE95333AE3C /* block.cc in Sources */,
+				1483B1F340E63F40FD056C6BA4AEBEC0 /* block_builder.cc in Sources */,
+				D97084C5A340727E31467C5A78CD69EA /* bloom.cc in Sources */,
+				31F5219287344FE7F350AF126F582AA6 /* builder.cc in Sources */,
+				66C8173FF5A09F6221992B693C02BA00 /* c.cc in Sources */,
+				2DBC3819DECA22101E0C4316B4448E2E /* cache.cc in Sources */,
+				AF59D4B7D5CF2D98C67FF065F89F617B /* coding.cc in Sources */,
+				213ED1CEC97875917254D1B068F6AB65 /* comparator.cc in Sources */,
+				43D1B4D7E7E0DE55DA7467ABF112E610 /* crc32c.cc in Sources */,
+				23C7621BD6142B7F6E7297E7CCA39E5B /* db_impl.cc in Sources */,
+				4873EF86B942AD9A49A4909BB1CB8BB7 /* db_iter.cc in Sources */,
+				D66C50ECE454C513FA1D9403227AAAAD /* dbformat.cc in Sources */,
+				020999D1319E2EC8810328438C5F731E /* dumpfile.cc in Sources */,
+				9C3487D6D4B5307CE29DF79808FC6E69 /* env.cc in Sources */,
+				39652004B7DB500709E6A235748CD7A2 /* env_posix.cc in Sources */,
+				920847548D2E0FA50DE2DB403BE99BEC /* filename.cc in Sources */,
+				52C18066516C52F8858C0D7ADB7EE5B1 /* filter_block.cc in Sources */,
+				E102F486B5B7D0E08E6E0E3E69D89A63 /* filter_policy.cc in Sources */,
+				F6BDE8265AE900B3AA3E523BF7AA9859 /* format.cc in Sources */,
+				C1C3497DC875201843D1588AA4518A6E /* hash.cc in Sources */,
+				DA7BE48428FCA3444D7B75C9851A6FCE /* histogram.cc in Sources */,
+				643845AA48589C286026618D168D41FB /* iterator.cc in Sources */,
+				1E1E0E1B7C557429FC76AF964804A029 /* leveldb-library-dummy.m in Sources */,
+				6E227069432130709196D33839ADCC09 /* leveldb_main.cc in Sources */,
+				A6A81F8E2BA9623E26A16AE899A1D4C2 /* log_reader.cc in Sources */,
+				AFCBC4825296D9A6DD77DF637683DF44 /* log_writer.cc in Sources */,
+				E9C183F49B80EC0771D52CAF2D09EE95 /* logging.cc in Sources */,
+				A0257C3136FE2F822DF9C9EEA1E20B01 /* memtable.cc in Sources */,
+				F2CE9146F7CB3D7451E69B979BF7A143 /* merger.cc in Sources */,
+				E4B6A3F3F02F3A8631D214E1E2152CA0 /* options.cc in Sources */,
+				BEC28FA6A7A5B515095605EF96FB055E /* port_posix.cc in Sources */,
+				C9C13E6B9DDD0907972675F81C76C9B0 /* repair.cc in Sources */,
+				2058FA583DC0E4B05FDB8F8FF8F644AC /* status.cc in Sources */,
+				EF37F72A295CC9FB4F2A1C33760939A0 /* table.cc in Sources */,
+				51BF5177FF251E5409AACE582CAF6B4E /* table_builder.cc in Sources */,
+				63DEDFBB1A0929C11142FF9A1A771726 /* table_cache.cc in Sources */,
+				CDBADC95E236D1D745B05896375CF4C9 /* testharness.cc in Sources */,
+				2B8C1F7AD161C1AA1B804A03AE77733B /* testutil.cc in Sources */,
+				6403882C9F53A419228413C3F43F0201 /* two_level_iterator.cc in Sources */,
+				B80FA922E31298FFB2CAB8CE8F1491D2 /* version_edit.cc in Sources */,
+				580F960A15A2C736D0B6F5D7962D5C91 /* version_set.cc in Sources */,
+				645A739B4879BF9BDD7E72F426B7F207 /* write_batch.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E039C8832DF36C6AA9B398412DBAA4B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6053DB4F426B47C4A91E97990824D3 /* GoogleToolboxForMac-dummy.m in Sources */,
+				3D5A8358B3CE03D143C39C4BF52B34D3 /* GTMNSData+zlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		371616B2C3E5F5C1CFECBD929985C294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nanopb;
+			target = CF4B35B9FC819386EB09219BC91827D7 /* nanopb */;
+			targetProxy = 28FB9047227E5D80CD1EA59CBA0375B5 /* PBXContainerItemProxy */;
+		};
+		A75DE1EFE7DC236BDD4C19D44CD35794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "leveldb-library";
+			target = 6114F7C8E932C8FB4D8F8B320ABA8873 /* leveldb-library */;
+			targetProxy = 801FDB365E3B922102EB889220459836 /* PBXContainerItemProxy */;
+		};
+		E0CD2863222B29366C9344126CD2AB6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = E1BBB76ADBF2EF4EF2CE5DF6BBC77296 /* GoogleToolboxForMac */;
+			targetProxy = 328430AD33CB22F28A6090962CB81DFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0251221FE064FF24D0B0BB8A28DE66AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E56F3A40CB146839AB61F65A2CC53E /* Pods-LinkifyTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0387AC1D3913052FF9774D15AA97C424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543D8DD0617BD95E16E2B05B7BC818DB /* Pods-Linkify-tvOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0C4744E3991BE1B352C3D24B4FD9F20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E32B84F2587D098165A2A57A7CA4873 /* leveldb-library.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/leveldb-library/leveldb-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1C0DED43560AC5E69790FF5BED5899C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 095E4D9E09AFC14AF304AB6ED41EF033 /* nanopb.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2B46EC2CD649D4A9647823A0C9A1A3D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2449A1901452D65EBA822B87C7E3A22C /* Pods-Linkify-tvOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4E726E0D6BDFD0389C405A48A0D38F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA0E5FA6FF33FF449D6B8E36A0D7B25B /* Pods-Linkify.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		64B596F1A00DB6FC98428330865C0317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E32B84F2587D098165A2A57A7CA4873 /* leveldb-library.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/leveldb-library/leveldb-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		69EA47D48A139B65FB8350131D6D99D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3BA93408F919E4C0E7FB1B4DB0F4B9A /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6B4594D5814621042CC93AF3433763F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB318E2BDDE1FF5CB85449AEA3E8601 /* Pods-Linkify-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7DB7966F2AC9DF99D74D5AFE4973AABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3BA93408F919E4C0E7FB1B4DB0F4B9A /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9D5185848EB0524743F60EDF09571F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 095E4D9E09AFC14AF304AB6ED41EF033 /* nanopb.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4CB035821C2A94C21CF2102E629F948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AD3C5B618C38D5A1A73C85069157A3 /* Pods-LinkifyTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E25DD49636674B068334D9CDAB8E3C03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A24B39900B87D6F77170D8D4D51FD620 /* Pods-Linkify.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F78B85493860BD0742C2729AF5DBB584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF91773C8BD23F60FD94E54EC9945468 /* Pods-Linkify-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48C06454FD3A4CDCC13862D970599B38 /* Build configuration list for PBXNativeTarget "Pods-Linkify-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B46EC2CD649D4A9647823A0C9A1A3D7 /* Debug */,
+				0387AC1D3913052FF9774D15AA97C424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80DAC301748286D2FC032B7399C96352 /* Build configuration list for PBXNativeTarget "Pods-LinkifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0251221FE064FF24D0B0BB8A28DE66AB /* Debug */,
+				C4CB035821C2A94C21CF2102E629F948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A129CC1C2CC63A3D82E969455A7D58D0 /* Build configuration list for PBXNativeTarget "Pods-Linkify-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78B85493860BD0742C2729AF5DBB584 /* Debug */,
+				6B4594D5814621042CC93AF3433763F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8307E997A097EB50C00A8C7967B858A /* Build configuration list for PBXNativeTarget "nanopb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0DED43560AC5E69790FF5BED5899C3 /* Debug */,
+				9D5185848EB0524743F60EDF09571F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B988007291601B7D5FFBB51279788A07 /* Build configuration list for PBXNativeTarget "leveldb-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4744E3991BE1B352C3D24B4FD9F20F /* Debug */,
+				64B596F1A00DB6FC98428330865C0317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8E910B89548204C9E82F8F7CCB1460E /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69EA47D48A139B65FB8350131D6D99D9 /* Debug */,
+				7DB7966F2AC9DF99D74D5AFE4973AABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD4770408DDF3F927C12E71B427E97C0 /* Build configuration list for PBXNativeTarget "Pods-Linkify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25DD49636674B068334D9CDAB8E3C03 /* Debug */,
+				4E726E0D6BDFD0389C405A48A0D38F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
