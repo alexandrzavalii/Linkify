@@ -11,9 +11,14 @@ import { Logout } from '../../auth';
 import Tinder from './Tinder';
 import ProfileButton from '../../common/ProfileButton';
 import ShareButton from '../../common/ShareButton';
+import MatchesButton from '../../common/MatchesButton';
+
 import LinearGradient from 'react-native-linear-gradient';
 import Settings from '../Settings/Settings';
 import { getMatches } from '../../api/matches';
+
+import { getCards } from '../../api/firebase';
+
 
 
 export default class MatchesComponent extends Component {
@@ -29,14 +34,21 @@ export default class MatchesComponent extends Component {
 
     this.LogoutFromLinkedin = this.LogoutFromLinkedin.bind(this);
     this.goToProfile = this.goToProfile.bind(this);
+    this.goToMatched = this.goToMatched.bind(this);
     this.onSwipedAllCards = this.onSwipedAllCards.bind(this);
 
   }
 
+
   componentDidMount() {
-    // getMatches(0).then(cards => {
-    //   this.setState({ cards, loading: false, noCards: false })
-    // });
+    getCards().then(users => {
+      if (users.length) {
+        this.setState({ 
+          cards: users, 
+          noCards: false 
+        })
+      }
+    });
   }
 
 
@@ -51,8 +63,12 @@ export default class MatchesComponent extends Component {
   goToProfile() {
     this.props.navigation.navigate('Profile');
   }
-  
+  goToMatched() {
+    this.props.navigation.navigate('Matched');    
+  }
   render() {
+    console.log('snap.val()', this.state.cards);
+    
     return (
       <LinearGradient
         colors={['#FFFFFF', '#0084BF']}
@@ -67,6 +83,7 @@ export default class MatchesComponent extends Component {
         </View>
         <View style={styles.buttonsContainer}>
           <ProfileButton goToProfile={this.goToProfile} />
+          <MatchesButton goTo={this.goToMatched}/>
           <ShareButton />
         </View>
       </LinearGradient>

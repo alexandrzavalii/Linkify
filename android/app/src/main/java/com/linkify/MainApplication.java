@@ -3,6 +3,7 @@ package com.linkify;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.auth0.react.A0Auth0Package;
 import com.reactlibrary.linkedinsdk.RNLinkedInSessionManagerPackage;
@@ -27,6 +28,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new VectorIconsPackage(),
             new LinearGradientPackage(),
             new A0Auth0Package(),
             new RNLinkedInSessionManagerPackage(),

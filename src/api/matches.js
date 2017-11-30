@@ -22,6 +22,7 @@ const prepareData = (userData, index) => {
     if (userData) {
         return {
             index, 
+            key: userData.id.$oid,
             clientID: userData.id.$oid || 'no_id',
             familyName: userData.last_name || '',
             givenName: userData.first_name || '',

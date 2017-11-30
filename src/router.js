@@ -9,6 +9,7 @@ import Profile from "./components/Profile/Profile";
 
 import Settings from "./components/Settings/Settings";
 import Matches from "./components/Matches/Matches";
+import Matched from "./components/Matched/Matched";
 
 
 export const LoggedOut = StackNavigator({
@@ -31,6 +32,9 @@ const LoggedIn = StackNavigator(
                 //   title: "Matches",
                 // tabBarIcon: ({ tintColor }) => <Icon size={ 20 } name={ 'users' } color={ tintColor }/>
             }
+        },
+        Matched: {
+            screen: Matched,
         },
         Profile: {
             screen: Profile,

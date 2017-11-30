@@ -3,8 +3,7 @@ import Swiper from 'react-native-deck-swiper'
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native'
 import Settings from '../Settings/Settings';
 import Card from './Card';
-import { saveSwipedCard } from '../../api/firebase';
-
+import { saveSwipedCard, cardSwipedRight, cardSwipedLeft } from '../../api/firebase';
 
 export default class Tinder extends Component {
     constructor(props) {
@@ -15,19 +14,21 @@ export default class Tinder extends Component {
             cardIndex: 0
         }
         this.onSwipedLeft = this.onSwipedLeft.bind(this);
-        this.onSwipedRight = this.onSwipedRight.bind(this);
+        this.onSwipedRight = this.onSwipedRight.bind(this);        
     }
 
-    componentDidMount() {}
+    componentDidMount() {
+        console.log("this", this.props);
+    }
 
-    renderCard = (person, index) => {
-        return <Card
+    renderCard = (person) =>
+        <Card
             {...person}
+            index={this.props.cards.indexOf(person)}
             swipeRight={this.swipeRight}
             swipeLeft={this.swipeLeft}
             totalNumber={this.props.cards.length}
         />
-    };
 
     swipeBack = () => {
         if (!this.state.isSwipingBack) {
@@ -57,11 +58,15 @@ export default class Tinder extends Component {
     }
 
     onSwipedLeft(index) {
-        saveSwipedCard(this.props.cards[index].clientID, 'false')
+        // saveSwipedCard(this.props.cards[index].clientID, false)
+        const card = this.props.cards[index];
+        cardSwipedLeft(card.clientID, card.toSwipeWith);
     }
 
     onSwipedRight(index) {
-        saveSwipedCard(this.props.cards[index].clientID, 'true')        
+        const card = this.props.cards[index];
+        if(card.toSwipeWith) alert('wow');
+        cardSwipedRight(card.clientID, card.toSwipeWith);
     }
 
     render() {

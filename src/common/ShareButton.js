@@ -4,8 +4,10 @@ import {
     Image,
     TouchableHighlight
 } from 'react-native';
+
 import {shareComment} from '../api/linkedin';
 
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default class ShareButton extends Component {
 
@@ -15,7 +17,7 @@ export default class ShareButton extends Component {
     render() {
         return (
             <TouchableHighlight style={styles.shareButtonContainer} onPress={this.shareOnLinkedin} underlayColor="#0084BF">
-                <Image style={styles.shareButtonImage} source={require("../images/share-icon.png")} />
+                <Icon name="share" size={40} color="#FFFFFF"/>
             </TouchableHighlight>
         )
     }
@@ -31,9 +33,5 @@ const styles = StyleSheet.create({
         height: 60,
         alignItems: 'center',
         justifyContent: 'center'
-    },
-    shareButtonImage: {
-        width: 30,
-        height: 30
     }
 })

@@ -8,7 +8,8 @@ target 'Linkify' do
   # Pods for Linkify
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-
+  pod 'Firebase/Firestore'
+  
   target 'LinkifyTests' do
     inherit! :search_paths
     # Pods for testing
