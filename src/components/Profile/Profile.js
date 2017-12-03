@@ -8,7 +8,9 @@ import {
 } from 'react-native';
 
 import { Logout } from '../../auth';
-import { getUserData, refreshAccessToken } from '../../api/linkedin';
+import { refreshAccessToken } from '../../api/linkedin';
+import { getUserData } from '../../api/async_storage';
+
 // import { updateUser } from '../../api/firebase';
 // import { prepareUserData } from '../../api/data-services';
 export default class HomeComponent extends Component {
@@ -23,10 +25,9 @@ export default class HomeComponent extends Component {
 
     }
     componentDidMount() {
-        getUserData().then(prepareUserData).then((userData) => {
-            updateUser(userData);
-            this.setState({ user: userData });
-        });
+        getUserData().then(userData=>
+            this.setState({ user: userData })
+        );
     }
 
     LogoutFromLinkedin() {

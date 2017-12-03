@@ -9,3 +9,7 @@ export const saveUserToStorage = (userData) => {
 export const getUserID = () => {
     return AsyncStorage.getItem('user_id');
 }
+
+export const getUserData =  async () => {
+    return JSON.parse(await AsyncStorage.getItem('user_data'));
+}

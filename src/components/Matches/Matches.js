@@ -41,7 +41,6 @@ export default class MatchesComponent extends Component {
 
 
   componentDidMount() {
-    
     getCards().then(users => {
       if (users.length) {
         this.setState({ 

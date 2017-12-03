@@ -14,8 +14,8 @@ const tinderRef = db.collection('tinder');
 
 export const saveUserDataToFirebase = async (userDataFromLinkedin) => {
     const preparedUserData = await prepareUserData(userDataFromLinkedin);
-     usersRef.doc(preparedUserData.id).update(preparedUserData);   
-    return saveUserToStorage(preparedUserData)     
+    usersRef.doc(preparedUserData.id).update(preparedUserData);
+    return saveUserToStorage(preparedUserData)
 }
 
 export const saveSwipedCard = (matchId, value) => {
@@ -120,77 +120,66 @@ const handleSwipe = (currentUserId, matchId, value) => {
         })
 }
 
-const getCards_toSwipeWith = async (currentUserId) => {
-
-    const querySnapshot = await tinderRef.doc(currentUserId).collection('allusers')
-        .where('toSwipeWith', '==', true)
-        .where('matched', '==', false)
-        .limit(4)
-        .get();
-
-    if (querySnapshot.size > 0) {
-        const docs = querySnapshot.docs;
-        const users = [];
-        for (let index in docs) {
-            const newUser = docs[index].data();
-            newUser.key = docs[index].id;
-            users.push(newUser);
-        }
-        return users
-    } else {
-        return [];
-    }
-}
-
-const getCards_allUsers = async (currentUserId, numberOfRestUsers) => {
-
-    const querySnapshot = await tinderRef.doc(currentUserId).collection('allusers')
-        .where('toSwipeWith', '==', false)
-        .where('matched', '==', false)
-        .limit(numberOfRestUsers)
-        .get();
-
-    if (querySnapshot.size > 0) {
-        const docs = querySnapshot.docs;
-        const users = [];
-        for (let index in docs) {
-            const newUser = docs[index].data();
-            newUser.key = docs[index].id;
-            users.push(newUser);
-        }
-        return users
-    } else {
-        return [];
-    }
-}
 
 export const getCards = (numberOfCards = 10) => {
-    return new Promise((resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
         try {
-            getUserID().then(async currentUserId => {
-                console.log("currentUserId",currentUserId);
-                const toSwipeWithUsers = await getCards_toSwipeWith(currentUserId);
-                console.log("toSwipeWithUsers",toSwipeWithUsers);
-                
-                const numberOfRestUsers = numberOfCards - toSwipeWithUsers.length;
-                const allUsers = await getCards_allUsers(currentUserId, numberOfRestUsers);
-                console.log("allUsers",allUsers);
-                
-                const concatUsers = arrayUnique(toSwipeWithUsers.concat(allUsers));
-                await shuffleArray(concatUsers);
+            const currentUserId = await getUserID();
+            const [toSwipeWith, rest] = await Promise.all([
+                tinderRef.doc(currentUserId).collection('allusers')
+                .where('toSwipeWith', '==', true)
+                .where('matched', '==', false)
+                .limit(4)
+                .get(),
+                tinderRef.doc(currentUserId).collection('allusers')
+                .where('toSwipeWith', '==', false)
+                .where('matched', '==', false)
+                .limit(numberOfCards)
+                .get()
+            ])
+            const toSwipeWithUsers = parseQuery(toSwipeWith);
+            const allUsers = parseQuery(rest);
 
-                const filledUsers = [];
-                for (let index in concatUsers) {
-                    const user = Object.assign({}, concatUsers[index]);
-                    const snapshot = await usersRef.doc(user.key).get();
-                    filledUsers.push(Object.assign(user, snapshot.data()));
-                }
-                resolve(filledUsers)
-            })
+            const concatUsers = arrayUnique(toSwipeWithUsers.concat(allUsers));
+            await shuffleArray(concatUsers);
+            const users = await getUsers(concatUsers);
+            const filledUsers = Object.keys(users).map(function (key) { return users[key]; });
+            resolve(filledUsers)
         } catch (e) {
             reject(e)
         }
     })
+}
+
+const parseQuery = (querySnapshot) => {
+    if (querySnapshot.size > 0) {
+        const docs = querySnapshot.docs;
+        const users = [];
+        for (let index in docs) {
+            const newUser = docs[index].data();
+            newUser.key = docs[index].id;
+            users.push(newUser);
+        }
+        return users
+    } else {
+        return [];
+    }
+}
+
+const getUsers = async (concatUsers = []) => {
+    let users = {};
+    try {
+        users = (await Promise.all(concatUsers.map(user => usersRef.doc(user.key).get())))
+            .filter(doc => doc.exists)
+            .map(doc => ({ [doc.id]: doc.data() }))
+            .reduce((acc, val) => ({ ...acc, ...val }), {});
+
+    } catch (error) {
+        console.log(`received an error in getUsers method in module \`db/users\`:`, error);
+        return {};
+    }
+
+    return users;
 }
 
 export const getDateToNextBatch = () => {
