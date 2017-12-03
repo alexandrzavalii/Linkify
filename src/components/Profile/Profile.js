@@ -9,7 +9,8 @@ import {
 
 import { Logout } from '../../auth';
 import { getUserData, refreshAccessToken } from '../../api/linkedin';
-import { updateUser, prepareUserData } from '../../api/firebase';
+// import { updateUser } from '../../api/firebase';
+// import { prepareUserData } from '../../api/data-services';
 export default class HomeComponent extends Component {
 
     constructor(props) {

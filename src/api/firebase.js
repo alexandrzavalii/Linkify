@@ -1,27 +1,21 @@
 
 import firebase from 'react-native-firebase';
-import { saveUserID, getUserID } from '../auth';
+import { arrayUnique, shuffleArray, prepareUserData } from './data-services';
+import { saveUserToStorage, getUserID } from './async_storage';
 
 const db = firebase.firestore();
 const usersRef = db.collection('users');
 const tinderRef = db.collection('tinder');
 
-export const updateUser = (userData) => {
-    saveUserID(userData.id);
-    return usersRef.doc(userData.id).set({...userData});
-}
+// const [user, account] = await Promise.all([
+//     fetch('/users'),
+//     fetch('/account')
+// ])
 
-
-export const getLinkedinCredentials = () => {
-    return new Promise((resolve, reject) => {
-        try {
-            firebase.database().ref('linkedin').on("value", (snapshot) => {
-                resolve(snapshot.val())
-            })
-        } catch (e) {
-            reject(e)
-        }
-    })
+export const saveUserDataToFirebase = async (userDataFromLinkedin) => {
+    const preparedUserData = await prepareUserData(userDataFromLinkedin);
+     usersRef.doc(preparedUserData.id).update(preparedUserData);   
+    return saveUserToStorage(preparedUserData)     
 }
 
 export const saveSwipedCard = (matchId, value) => {
@@ -33,8 +27,8 @@ export const saveSwipedCard = (matchId, value) => {
 
 const update_inside_allusers = (currentUserId, cardID, updateNewCard) => {
     firebase.database()
-    .ref(`tinder/${currentUserId}/allusers/${cardID}`)
-    .update(updateNewCard)
+        .ref(`tinder/${currentUserId}/allusers/${cardID}`)
+        .update(updateNewCard)
 }
 
 
@@ -48,13 +42,13 @@ export const cardSwipedLeft = (cardID, toSwipeWith) => {
 
         let waitFrom = false;
 
-        if(toSwipeWith) {
+        if (toSwipeWith) {
             //remove from toSwipeWith from currentUserId
 
-        } 
+        }
 
-        update_inside_allusers(currentUserId, cardID, updateNewCard); 
-    })        
+        update_inside_allusers(currentUserId, cardID, updateNewCard);
+    })
 }
 export const cardSwipedRight = (cardID, toSwipeWith) => {
     getUserID().then(async currentUserId => {
@@ -65,7 +59,7 @@ export const cardSwipedRight = (cardID, toSwipeWith) => {
         updateNewCard.swiped = true; //swiped right
         updateNewCard.waitFrom = false; // waiting from cardID (default)        
 
-        if(toSwipeWith) {
+        if (toSwipeWith) {
             //1.remove from toSwipeWith because I already showd popup
             // firebase.database()
             // .ref(`tinder/${currentUserId}/toSwipeWith/${cardID}`)
@@ -78,11 +72,11 @@ export const cardSwipedRight = (cardID, toSwipeWith) => {
         } else {
             //check if clientID has skipped me already inside allusers
             const snapshot = await firebase.database()
-            .ref(`tinder/${cardID}/allusers/${currentUserId}`)
-            .once('value');
+                .ref(`tinder/${cardID}/allusers/${currentUserId}`)
+                .once('value');
             const user = snapshot.val();
 
-            if(user.value && !user.swiped) {
+            if (user.value && !user.swiped) {
                 //cardID has skipped currentUser
             } else {
                 // cardID has not yet swiped this user
@@ -90,13 +84,13 @@ export const cardSwipedRight = (cardID, toSwipeWith) => {
                 updateNewCard.waitFrom = true;
                 console.log("UPDATE TOSWIPEWITH", cardID);
                 firebase.database()
-                .ref(`tinder/${cardID}/allusers/${currentUserId}/toSwipeWith`)
-                .set(true);
+                    .ref(`tinder/${cardID}/allusers/${currentUserId}/toSwipeWith`)
+                    .set(true);
             }
         }
 
         update_inside_allusers(currentUserId, cardID, updateNewCard)
-        
+
     })
 }
 
@@ -128,72 +122,45 @@ const handleSwipe = (currentUserId, matchId, value) => {
 
 const getCards_toSwipeWith = async (currentUserId) => {
 
-    const firestore = tinderRef.doc(currentUserId).collection('allusers')
-    .where('value', '==', true)
-    .where('matched', '==', true)
-    .get().then(querySnapshot => {
-        if (querySnapshot.size > 0) {
-            // Contents of first document
-            console.log("FIRESTORE",querySnapshot.docs);
-          } else {
-            console.log("No such document!");
-          }
-    })
-    .catch(err => {
-        console.log('Error getting document', err);
-    });
-    
+    const querySnapshot = await tinderRef.doc(currentUserId).collection('allusers')
+        .where('toSwipeWith', '==', true)
+        .where('matched', '==', false)
+        .limit(4)
+        .get();
 
-    const snapshot = await firebase.database().ref(`tinder/${currentUserId}/allusers`)
-    .orderByChild('toSwipeWith')
-    .equalTo(true)
-    .limitToFirst(4)    
-    .once('value');
-
-    const users = snapshot.val();    
-    const toSwipeWithUsers = [];
-    for (let key in users) {
-        const newUser = Object.assign({}, { key, toSwipeWith: true });
-        toSwipeWithUsers.push(newUser);
+    if (querySnapshot.size > 0) {
+        const docs = querySnapshot.docs;
+        const users = [];
+        for (let index in docs) {
+            const newUser = docs[index].data();
+            newUser.key = docs[index].id;
+            users.push(newUser);
+        }
+        return users
+    } else {
+        return [];
     }
-    return toSwipeWithUsers;
 }
 
 const getCards_allUsers = async (currentUserId, numberOfRestUsers) => {
-    const snapshot = await firebase.database().ref(`tinder/${currentUserId}/allusers`)
-        .orderByChild('toSwipeWith')
-        .equalTo(false)
-        .limitToFirst(numberOfRestUsers)
-        .once('value');
 
-    const users = snapshot.val();
-    const allUsers = [];
-    for (let key in users) {
-        if(!users[key].matched) {
-            console.log('USERS NOT MATCHED',users[key]);
-            
-        const newUser = Object.assign({}, { key });
-        allUsers.push(newUser);
+    const querySnapshot = await tinderRef.doc(currentUserId).collection('allusers')
+        .where('toSwipeWith', '==', false)
+        .where('matched', '==', false)
+        .limit(numberOfRestUsers)
+        .get();
+
+    if (querySnapshot.size > 0) {
+        const docs = querySnapshot.docs;
+        const users = [];
+        for (let index in docs) {
+            const newUser = docs[index].data();
+            newUser.key = docs[index].id;
+            users.push(newUser);
         }
-    }
-    return allUsers;
-}
-
-function arrayUnique(array) {
-    var a = array.concat();
-    for (var i = 0; i < a.length; ++i) {
-        for (var j = i + 1; j < a.length; ++j) {
-            if (a[i].key === a[j].key)
-                a.splice(j--, 1);
-        }
-    }
-
-    return a;
-}
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+        return users
+    } else {
+        return [];
     }
 }
 
@@ -201,16 +168,22 @@ export const getCards = (numberOfCards = 10) => {
     return new Promise((resolve, reject) => {
         try {
             getUserID().then(async currentUserId => {
+                console.log("currentUserId",currentUserId);
                 const toSwipeWithUsers = await getCards_toSwipeWith(currentUserId);
+                console.log("toSwipeWithUsers",toSwipeWithUsers);
+                
                 const numberOfRestUsers = numberOfCards - toSwipeWithUsers.length;
                 const allUsers = await getCards_allUsers(currentUserId, numberOfRestUsers);
+                console.log("allUsers",allUsers);
+                
                 const concatUsers = arrayUnique(toSwipeWithUsers.concat(allUsers));
                 await shuffleArray(concatUsers);
+
                 const filledUsers = [];
                 for (let index in concatUsers) {
                     const user = Object.assign({}, concatUsers[index]);
-                    const snapshot = await firebase.database().ref(`users/${user.key}`).once('value');
-                    filledUsers.push(Object.assign(user, snapshot.val()));
+                    const snapshot = await usersRef.doc(user.key).get();
+                    filledUsers.push(Object.assign(user, snapshot.data()));
                 }
                 resolve(filledUsers)
             })
@@ -218,15 +191,6 @@ export const getCards = (numberOfCards = 10) => {
             reject(e)
         }
     })
-}
-
-
-
-const getUserInfoByID = (userId) => {
-    return firebase.database().ref(`users/${userId}`)
-        .on('value', snapshot => {
-            console.log("user", snapshot.val());
-        })
 }
 
 export const getDateToNextBatch = () => {
@@ -255,6 +219,9 @@ export const getDateToNextBatch = () => {
 }
 
 const updateLastSwipedTimestamp = (currentUserId) => {
+
+
+
     firebase.database().ref(`users/${currentUserId}/lastSwipe`)
         .on("value", snapshot => {
             if (snapshot.val()) {
@@ -272,29 +239,5 @@ const updateLastSwipedTimestamp = (currentUserId) => {
                 }
             }
         })
-
-}
-
-export const prepareUserData = (user) => {
-    return new Promise((resolve, reject) => {
-        if (user) {
-            resolve({
-                id: user.id,
-                lastName: user.lastName || '',
-                firstName: user.firstName || '',
-                headline: user.headline || '',
-                numConnections: user.numConnections || '',
-                pictureUrl: user.pictureUrls.values[0] || '',
-                publicProfileUrl: user.publicProfileUrl || 'google.com',
-                industry: user.industry || '',
-                summary: user.summary || 'No summary',
-                location: user.location,
-                emailAddress: user.emailAddress
-            })
-        } else {
-            reject();
-        }
-    });
-
 
 }

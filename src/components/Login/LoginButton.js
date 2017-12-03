@@ -5,7 +5,6 @@ import {
   Text,
   View
 } from 'react-native';
-import { Login, GetUserData } from '../../auth';
 
 export default class LoginButton extends Component {
   render() {

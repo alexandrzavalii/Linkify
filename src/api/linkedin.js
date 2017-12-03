@@ -1,4 +1,21 @@
 import { getIdToken, getAccessToken } from '../auth';
+import firebase from 'react-native-firebase';
+
+const db = firebase.firestore();
+const linkedinRef = db.collection('linkedin');
+
+
+export const getLinkedinCredentials = () => {
+    return new Promise((resolve, reject) => {
+        linkedinRef.doc('settings').get()
+            .then(snapshot => {
+                resolve(snapshot.data());
+            })
+            .catch(err => {
+                reject(err);
+            });
+    })
+}
 
 export function shareComment() {
     return getAccessToken().then(clientToken => {
@@ -31,7 +48,7 @@ export function shareComment() {
     })
 }
 
-export function refreshAccessToken(){
+export function refreshAccessToken() {
     return fetch('https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=7741ft9f7znfqf&redirect_uri=https%3A%2F%2Falexandr.auth0.com%2Flogin%2Fcallback&state=987654321&scope=r_basicprofile', {
         method: 'GET',
     }).then(response=> console.log("RESPONSE", response));

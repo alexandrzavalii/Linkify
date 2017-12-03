@@ -41,11 +41,18 @@ export default class MatchesComponent extends Component {
 
 
   componentDidMount() {
+    
     getCards().then(users => {
       if (users.length) {
         this.setState({ 
           cards: users, 
-          noCards: false 
+          noCards: false,
+          loading: false
+        });
+      } else {
+        this.setState({
+          noCards: true,
+          loading: false
         })
       }
     });
@@ -66,20 +73,20 @@ export default class MatchesComponent extends Component {
   goToMatched() {
     this.props.navigation.navigate('Matched');    
   }
-  render() {
-    console.log('snap.val()', this.state.cards);
-    
+  render() {    
     return (
       <LinearGradient
         colors={['#FFFFFF', '#0084BF']}
         locations={[0, 0.8]}
         style={styles.container}>
         <View style={styles.tinderContainer}>
-
-          {this.state.noCards ?
+        {this.state.loading ?
+        <Text>Loading</Text> :
+        this.state.noCards ?
             <Settings /> :
             <Tinder onSwipedAllCards={this.onSwipedAllCards} cards={this.state.cards} goToProfile={this.goToProfile} />
-          }
+          
+        }
         </View>
         <View style={styles.buttonsContainer}>
           <ProfileButton goToProfile={this.goToProfile} />

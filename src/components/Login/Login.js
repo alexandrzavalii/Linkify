@@ -8,7 +8,9 @@ import {
 import LoginButton from './LoginButton';
 import LinkedInModal from 'react-native-linkedin'
 import { saveSession } from '../../auth';
-import { getLinkedinCredentials } from '../../api/firebase';
+import { getLinkedinCredentials, getUserData } from '../../api/linkedin';
+import { saveUserDataToFirebase } from '../../api/firebase';
+// import { prepareUserData } from './api/data-services';
 
 export default class LoginComponent extends Component {
   constructor(props) {
@@ -23,8 +25,9 @@ export default class LoginComponent extends Component {
     getLinkedinCredentials().then(credentials => this.setState({ ...credentials, gettingCredentials: false }))
   }
 
-  onSuccess(data) {
-    saveSession(data);
+  async onSuccess({access_token, expires_in}) {
+    await saveSession({access_token, expires_in});
+    await getUserData().then(saveUserDataToFirebase);
     this.props.navigation.navigate('Matches');
   }
 

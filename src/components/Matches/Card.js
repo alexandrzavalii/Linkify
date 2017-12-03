@@ -11,7 +11,7 @@ export default Card = (props) => {
             <View style={styles.textContainer}>
                 <View style={styles.textFlexContainer}>
                     <Text style={styles.text}>
-                        <Text style={styles.textFieldName}>Name:</Text> {props.familyName} {props.givenName}
+                        <Text style={styles.textFieldName}>Name:</Text> {props.firstName} {props.secondName}
                     </Text>
                     <Text style={styles.text}>
                         <Text style={styles.textFieldName}>Headline:</Text> {props.headline}</Text>

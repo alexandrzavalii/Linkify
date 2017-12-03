@@ -10,8 +10,9 @@ import { createRootNavigator } from "./router";
 
 
 import firebase from 'react-native-firebase';
-import { getUserData } from './api/linkedin';
-import { prepareUserData, updateUser } from './api/firebase';
+// import { getUserData } from './api/linkedin';
+// import { updateUser } from './api/firebase';
+// import { prepareUserData } from './api/data-services';
 
 const defaultApp = firebase.app();
 
@@ -34,7 +35,7 @@ export default class Main extends Component {
   componentWillMount() {
     isLoggedin()
       .then(signedIn => this.setState({ signedIn, checkedSignIn: true }))
-      .then(getUserData().then(prepareUserData).then(updateUser))
+      // .then(getUserData().then(prepareUserData).then(updateUser))
       .catch(err => console.log('err', err));
   }
 

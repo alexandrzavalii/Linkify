@@ -8,16 +8,7 @@ export const onLogout = () => AsyncStorage.removeItem(accessToken);
 export const saveSession = ({access_token, expires_in}) => {    
     let expiresAt = JSON.stringify((expires_in * 1000) + new Date().getTime());
     AsyncStorage.setItem('access_token', access_token);
-    AsyncStorage.setItem('expires_in', expiresAt);
-}
-
-
-export const saveUserID = (userId) => {
-    AsyncStorage.setItem('user_id', userId);
-}
-
-export const getUserID = () => {
-    return AsyncStorage.getItem('user_id');
+    return AsyncStorage.setItem('expires_in', expiresAt);
 }
 
 export const getAccessToken = () => {
